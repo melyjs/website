@@ -1,0 +1,15 @@
+
+            El auto:
+            Nombre del vehiculo: xsara
+            Cantidad de ruedas: 4
+            Numero de motor: 1672993
+            Tipo de motor: V16
+            --------------------------------------------------
+        
+            El auto:
+            Nombre del vehiculo: mitsu
+            Cantidad de ruedas: 4
+            Numero de motor: 2156312
+            Tipo de motor: V8
+            --------------------------------------------------
+        

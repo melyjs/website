@@ -1,15 +1,26 @@
-class Vehiculo:
-    _tipo_vehiculo:str = "auto"
-    _cantidad_ruedas:int = 4 
+from vehiculo import Vehiculo
+from vehiculo import Manager
+#xsara:Vehiculo = Vehiculo()
+def main():
 
-    def cantidad_ruedas(self):
-        print(f"El vehiculo tiene {self._cantidad_ruedas} ruedas")
+    mitsu:Vehiculo = Vehiculo(
+    ruedas = 4,
+    motor = "V16",
+    numero_motor = "1672993"
+    )
 
-    def __srt__(self):
-        return f"""
-xsara:Vehiculo = Vehiculo()
+    xsara:Vehiculo = Vehiculo(
+    ruedas = 4,
+    motor = "V8",
+    numero_motor = 2156312
+    )
 
-print(xsara._tipo_vehiculo)
-xsara.cantidad_ruedas()
+    local_database:Manager = Manager()
+    local_database.insertar_vehiculo(mitsu)
+    local_database.insertar_vehiculo(xsara)
 
-print(xsara)
+    local_database.mostrar_vehiculos()
+    local_database.save_vehiculos()
+
+if __name__ == '__main__':
+    main()
