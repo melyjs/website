@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static './media/icons/camera.png' %}">
+    <link rel="stylesheet" href="{% static './CSS/apiStyle.css' %} ">
+    <title>Carolina Celeste Fotografía</title>
+</head>
+<body>
+  <header>
+    <a href="{% url 'index' %}" class="logo"><img src="{% static './media/icons/logo.png' %}" alt=""></a>
+  </header>
+    <center>
+        <main id="main">
+            <h1>Formulario de Inspiraciones</h1>
+            <hr>
+            <div>
+                <h3 v-show="form!=null"></h3>
+                <form v-show="form!=null"></form>
+                  <div v-for="(valor, item) in form">
+                    <label>{{valor.label}}</label>
+                    <details>{{item}}:{{quinceanera[item]}}</details>
+                     <br>
+                    <input
+                      v-bind:type="valor.type"
+                      v-bind:placeholder="valor.placeholder"
+                      v-model="quinceanera[item]"
+                    >
+                  </div>
+                  <hr>
+                  <button @click="getDataHandler($event)">Cargar</button>
+                </form>
+
+                <hr>
+                <p v-show="errorPost != null">{{errorPost}}</p>
+            </div>
+        </main>
+    </center>    
+</body>
+<script type="module" src="{% static './js/index.js' %}"></script>
+<footer>
+  <a href="{% url 'index' %}">Volver</a><br><br>
+  <p>-Carolina Celeste fotografía-</p>
+</footer>
+</html>
