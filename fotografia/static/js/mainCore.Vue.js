@@ -2,7 +2,7 @@ export const mainCore = {
     data: function () {
         return {
             form: null,
-            form_config_json: "{% static './js/form.pattern.json' %}",
+            form_config_json: "{% static './js/form.pattern.json' %}", 
             api_quinceaneras: "https://sheetdb.io/api/v1/dvptdru0jw5rp",
             quinceanera: {
                 "name": "",
