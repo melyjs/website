@@ -2,12 +2,12 @@ from django.db import models
 from django.db.models import Model
 
 # Create your models here.
-
 class Cursos(Model):
     """
     Atributos de clase que son usadas por herencia de la clase Model
 
     """
+    
     nombre = models.CharField(max_length=100, default="Alumno x")
     duracion = models.CharField(max_length=100, default="Meses x", blank=False, null=False)
     contacto = models.EmailField(max_length=100, default="no_contact@mail.com")
