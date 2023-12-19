@@ -27,7 +27,7 @@ A continuación, se describen las secciones clave del sitio web:
 
 - **Formulario de Contacto**: Un formulario interactivo que permite a los visitantes del sitio web ponerse en contacto con Carolina Celeste para solicitar presupuestos o hacer consultas.
 
-- **Cursos**: Una sección interactiva donde los potenciales alumnos pueden proponer su disponibilidad para realizar cursos, donde se les permite crear cursos, visualizarlos, editarlos e incluso borrar los cursos que no podrá realizar para poder crearlos nuevvamente cuando tenga disponibilidad
+- **Cursos**: Una sección interactiva donde los potenciales alumnos pueden proponer su disponibilidad para realizar cursos, donde se les permite crear cursos, visualizarlos, editarlos e incluso borrar los cursos que no podrá realizar para poder crearlos nuevamente cuando tenga disponibilidad
 
 ## Objetivos y motivación
 
@@ -73,7 +73,7 @@ El proyecto utiliza las siguientes tecnologías:
 - JavaScript para la funcionalidad interactiva del menú de navegación.
 - [Formspree](https://formspree.io/) para el manejo del formulario de contacto.
 -Formulario con API en SheetDB
--Python, Django y MySQL para realizar operacions CRUD en la opcion de Cursos de Fotografia
+-Python, Django y SQLite para realizar operacions CRUD en la opcion de Cursos de Fotografia
 
 ## Autor
 
